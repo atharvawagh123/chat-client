@@ -1,0 +1,113 @@
+/* Instagram-like styles for login page */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  max-width: 350px;
+  padding: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10%; /* Adjusted margin-top for positioning */
+}
+
+.title-login {
+  background-image: url('https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 51px;
+  width: 175px;
+  margin: 0 auto 30px;
+  text-indent: -9999px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensures form takes full width of container */
+  margin-bottom: 20px;
+}
+
+.input-element {
+  width: 100%; /* Full width input elements */
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  font-size: 14px;
+  padding: 9px 8px 7px;
+  margin-bottom: 6px;
+}
+
+.input-element:focus {
+  border-color: #a8a8a8;
+  outline: none;
+}
+
+.login-button {
+  background-color: #0095f6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  width: 100%; /* Full width button */
+  margin-top: 8px;
+}
+
+.label-1 {
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.login-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #0086e0;
+}
+
+.to-register {
+  color: #262626;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.to-register a {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.to-register a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+p[style*="color: red"] {
+  color: #ed4956;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+  .login-page {
+    border: none;
+    padding: 20px;
+  }
+}
